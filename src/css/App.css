@@ -26,29 +26,34 @@ body {
   place-items: center;
 }
 
-.imageGrid {
-  max-width: 960px;
+.imageGrid
+{
   margin: 0 auto;
 }
 
-.photos {
+.photos
+{
   display: flex;
-  background-color: #000;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: stretch;
   padding: 0;
-  max-width: 980px;
 }
 
-.photos img {
+.photos img
+{
   display: block;
   float: left;
   flex: 0 0 auto;
-  background-color: #fff;
 }
 
+@media screen and (min-width: 10px) {
+  .photos img {
+    width: calc(100%/6);
+    height: calc(100%/6);
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .photos img {
