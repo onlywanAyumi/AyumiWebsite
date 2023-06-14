@@ -1,0 +1,114 @@
+#root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  margin: 0 auto;
+  padding: 2rem;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-family: Copperplate, Papyrus, fantasy;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  place-items: center;
+}
+
+.imageGrid {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.photos {
+  display: flex;
+  background-color: #000;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  padding: 0;
+  max-width: 980px;
+}
+
+.photos img {
+  display: block;
+  float: left;
+  flex: 0 0 auto;
+  background-color: #fff;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .photos img {
+    width: calc(100%/6);
+    height: calc(100%/6);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .photos img {
+    width: calc(100%/4);
+    height: calc(100%/4);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .photos img {
+    width: calc(100%/3);
+    height: calc(100%/3);
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .photos img {
+    width: calc(100%/2);
+    height: calc(100%/2);
+  }
+}
+
+@media screen  and (max-width: 320px) {
+  .photos img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.container
+{
+  /* background: url("../assets/banana_leaves.jpg"); */
+  background-position: 'center';
+  background-size: 'cover';
+  backgroundRepeat: 'no-repeat';
+  width: '100vw';
+  height: '100vh';
+  background-color: #3f3d3d;
+  margin: 10vh;
+  padding: 2vh;
+
+  align-self: center;
+}
+
+.title
+{
+  font-size: 5vh;
+}
+
+.card
+{
+  font-size: 2vh;
+  padding: 1vh;
+  font-weight: bold;
+}
+
