@@ -1,2 +1,2 @@
-# Ayumi_website
+# AyumiWebsite
 A small website for a small buisness
