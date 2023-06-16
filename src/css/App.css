@@ -6,7 +6,6 @@
   -webkit-text-size-adjust: 100%;
 
   margin: 0 auto;
-  padding: 2rem;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -16,8 +15,15 @@
   line-height: 1.5;
   font-weight: 400;
   color: white;
+  
 
-  align-items: center;
+  background-image: 'url("../assets/banana_leaves.jpg")';
+  box-sizing: border-box;
+}
+
+.content
+{
+  height: 100vh;
 }
 
 body {
@@ -103,16 +109,20 @@ body {
   padding: 2vh;
 
   align-self: center;
+
+  min-width: 60vh;
+  max-width: 80vh;
 }
 
 .title
 {
-  font-size: 5vh;
+  align-text: center; /*???????*/
+  font-size: 8vh;
 }
 
 .card
 {
-  font-size: 2vh;
+  font-size: 3vh;
   padding: 1vh;
   font-weight: bold;
 }
