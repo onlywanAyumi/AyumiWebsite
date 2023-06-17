@@ -1,5 +1,5 @@
 import '../css/App.css'
-import {Parallax} from 'react-parallax';
+import {Parallax, Background} from 'react-parallax';
 import image1 from '../assets/banana_leaves.jpg';
 
 function App() {
@@ -7,12 +7,21 @@ function App() {
   return (
     <>
       <div className="App">
-        <Parallax strength={500} bgImage={image1} >
+        <Parallax strength={500} >
+          <Background className="custom-bg">
+            <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
+          </Background>
           <div className="content">
             <div className="container">
               <h1 className="title">Only Wan Dog Grooming</h1>
             </div>
           </div>
+        </Parallax>
+
+        <Parallax strength={-500} >
+          <Background className="custom-bg">
+            <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
+          </Background>
         </Parallax>
       </div>
     </>

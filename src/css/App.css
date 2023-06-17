@@ -17,11 +17,16 @@
   color: white;
   
 
-  background-image: 'url("../assets/banana_leaves.jpg")';
+  /* background-image: 'url("../assets/banana_leaves.jpg")'; */
   box-sizing: border-box;
 }
 
 .content
+{
+  height: 100vh;
+}
+
+Background
 {
   height: 100vh;
 }
