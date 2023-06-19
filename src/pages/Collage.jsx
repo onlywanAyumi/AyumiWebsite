@@ -1,5 +1,7 @@
-import '../css/Index.css'
-import {Parallax, Background} from 'react-parallax';
+// import '../css/Index.css'
+import '../css/temp.css'
+
+
 import image1 from '../assets/banana_leaves.jpg';
 import example_1 from '../assets/example_1.png';
 
@@ -8,7 +10,7 @@ function Collage() {
   return (
     <>
       <div className="App">
-        <Parallax strength={500} bgImage={example_1}>
+        <Parallax strength={500} bgImage={image1}>
         </Parallax>
       </div>
     </>

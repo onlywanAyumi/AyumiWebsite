@@ -1,21 +1,21 @@
-import '../css/Index.css'
-import {Parallax, Background} from 'react-parallax';
+// import '../css/Index.css'
+import '../css/temp.css'
+import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+import image1 from '../assets/banana_leaves.jpg';
 
 function App() {
 
   return (
-    <>
       <div className="App">
-        <Parallax strength={500} >
-          <div className="content">
-            <div className="container">
-              <h1 className="title">Only Wan Dog Grooming</h1>
-            </div>
-          </div>
-        </Parallax>
-
+      <Parallax pages={1} style={{ top: '0', left: '0' }}>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <img src={image1} alt="banana leaves" />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={2.5}>
+          <h1 className='cardContainer'>Parallax</h1>
+        </ParallaxLayer>
+      </Parallax>
       </div>
-    </>
   )
 }
 
