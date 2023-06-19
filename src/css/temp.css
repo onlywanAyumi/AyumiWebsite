@@ -1,0 +1,119 @@
+#root {
+    /* font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-family: Copperplate, Papyrus, fantasy;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    /*place-items: center;*/
+}
+
+html,
+body,
+#root
+{
+    height: 100%;
+    width: 100%;
+}
+
+.bg
+{
+    background-image: '../assets/banana_leaves.jpg';
+}
+
+.background {
+    background: linear-gradient(#e66465, #9198e5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 160vh;
+
+}
+.cardContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card
+{
+
+    background-color: #3f3d3d;
+    padding: 5vh;
+    border-width: 2vh;
+    border-style: solid;
+
+    min-width: 60vh;
+    max-width: 80vh;
+
+    border-image: url('../assets/banana_leaves.jpg') 25% round;
+}
+
+.title
+{
+    font-size: 8vh;
+}
+
+.textBody
+{
+    font-size: 3vh;
+    padding: 1vh;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 10px) {
+    .photos img {
+      width: calc(100%/6);
+      height: calc(100%/6);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .photos img {
+      width: calc(100%/6);
+      height: calc(100%/6);
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .photos img {
+      width: calc(100%/4);
+      height: calc(100%/4);
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .photos img {
+      width: calc(100%/3);
+      height: calc(100%/3);
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    .photos img {
+      width: calc(100%/2);
+      height: calc(100%/2);
+    }
+  }
+  
+  @media screen  and (max-width: 320px) {
+    .photos img {
+      width: 100%;
+      height: 100%;
+    }
+  }
