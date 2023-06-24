@@ -4,15 +4,15 @@ body,
   height: 100%;
   width: 100%;
   overflow: hidden;
+
+  text-align: center;
 }
 
 body {
-  font-family: system-ui;
   margin: 0;
 }
 
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
+.title
+{
+  font-size: 10vh;
 }
