@@ -3,16 +3,37 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 
-  text-align: center;
+  background-image: url("../../public/leaves.jpg");
+
 }
 
 body {
   margin: 0;
 }
 
+.app
+{
+  /* display: flex;
+  align-items: center; */
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
 .title
 {
   font-size: 10vh;
+}
+
+.card
+{
+
+  background-color: white;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 10%;
 }
