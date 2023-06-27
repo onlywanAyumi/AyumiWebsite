@@ -1,12 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,200;1,400&display=swap');
+
 html,
 body,
 #root {
+overflow: hidden;
+
   height: 100%;
   width: 100%;
   /* overflow: hidden; */
 
-  background-image: url("../../public/leaves.jpg");
+  background-image: url("../../public/leaves1.jpg");
 
+  font-family: 'Ysabeau Infant', sans-serif;
 }
 
 body {
@@ -18,6 +24,10 @@ body {
   /* display: flex;
   align-items: center; */
 
+  /* boarder-image: url("../../public/leaves2.jpg");
+  boarder-style: solid;
+  boarder-width: 10%; */
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -26,11 +36,14 @@ body {
 
 .title
 {
-  font-size: 10vh;
+  font-size: 8vh;
 }
 
 .card
 {
+
+  font-size: 2vh;
+  word-wrap: break-word;
 
   background-color: white;
   min-width: 200px;
