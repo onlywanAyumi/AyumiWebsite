@@ -2,6 +2,7 @@ import '../css/Index.css'
 // import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
 import sato from "../../public/satoLogo1.png"
+import dog from "../../public/testImage.png"
 
 //create scrollTo function()
 
@@ -12,10 +13,12 @@ function App() {
   return (
     <div className='app'>
       <div className="card">
-        <div className='title'>
-          OnlyWan
+        <div className='titleBar'>
+          <div className='title'>
+            OnlyWan
+          </div>
+          <img class="logo" src={sato} />
         </div>
-        <img src={"sato"} />
         <nav>
           <ul>
             <li><a href="#whyUs">Why Us</a></li>
@@ -24,14 +27,12 @@ function App() {
           </ul>
         </nav>
         <div className='subTitle'>
-          OnlyWan is a relaxing no-stress dog grooming service
-          <br />
-          //should I mention "we" specialize in nervous dogs?
+          OnlyWan is low-stress dog grooming service
         </div>
         <br/>
         <section>
           <div className='sectionTitle'>
-            <h3>Why us:</h3>
+            <h2>Why us:</h2>
           </div>
           <div className='subText'>
             <p>
@@ -41,6 +42,9 @@ function App() {
               our furry friend needs a simple bath, brush, or a stylish haircut, we always 
               prioritize their comfort and well-being!
               <br/>
+            </p>
+            {/* <img className="dog" src = {dog} /> */}
+            <p>
               <br/>
               Ayumi is not only a groomer, but she also has been studying dog behaviors and animal 
               welfare for years. She loves and cares dogs, and she will provide a gentle and 
@@ -48,16 +52,20 @@ function App() {
               with dogs during the grooming process!
               <br/>
             </p>
+            <div>
+              image goes here
+            </div>
           </div>
         </section>
         <br />
         <section>
           <div className='sectionTitle'>
-            <h3>Services:</h3>
+            <h2>Services:</h2>
           </div>
           <div className='subText'>
             <p>
-              <bold>For puppies</bold>
+              For puppies:
+              <br/>
               <br/>
               The first grooming experience for puppy is very important 
               because It’s are not only one time job but life-long commitment.
@@ -66,7 +74,8 @@ function App() {
               for them which will continually no stress for rest of them grooming life!
               <br/>
               <br/>
-              <bold>The Teddy bear haircut</bold>
+              The Teddy bear haircut:
+              <br/>
               <br/>
               Do you like to have your dog to be looks like teddy bear?
               We will seek out each dog’s potential and make as cute as possible!
@@ -82,7 +91,7 @@ function App() {
         <br />
         <section>
         <div className='sectionTitle'>
-          <h3>Contact:</h3>
+          <h2>Contact:</h2>
         </div>
         <div className='subText'>
           <p>

@@ -42,3 +42,21 @@ body
 {
   font-size: 8vh;
 }
+
+.titleBar
+{
+  
+}
+
+.logo
+{
+  height: 75%;
+  width: 75%;
+  /* transform: translateX(200%); */
+}
+
+.dog
+{
+  height: 50%;
+  width: 50%;
+}
