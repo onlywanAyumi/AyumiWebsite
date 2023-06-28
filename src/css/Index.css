@@ -3,50 +3,42 @@
 
 html,
 body,
-#root {
-overflow: hidden;
-
+#root 
+{
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
-
-  background-image: url("../../public/leaves1.jpg");
-
-  font-family: 'Ysabeau Infant', sans-serif;
 }
 
-body {
+body 
+{
+  font-family: 'Ysabeau Infant', sans-serif;
+  background-image: url("../../public/leaves1.jpg");
+  background-size: cover;
   margin: 0;
 }
 
 .app
 {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  /* boarder-image: url("../../public/leaves2.jpg");
-  boarder-style: solid;
-  boarder-width: 10%; */
+  word-wrap: break-word;
+}
 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+.card
+{ 
+  font-size: 2vh;
+  
+  background-color: white;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 10%;
+
+  border-image: url("../../public/leaves2.jpg") 10px round;
 }
 
 .title
 {
   font-size: 8vh;
-}
-
-.card
-{
-
-  font-size: 2vh;
-  word-wrap: break-word;
-
-  background-color: white;
-  min-width: 200px;
-  max-width: 400px;
-  padding: 10%;
 }
