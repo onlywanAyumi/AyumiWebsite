@@ -34,8 +34,6 @@ body
   min-width: 300px;
   max-width: 400px;
   padding: 10%;
-
-  border-image: url("../../public/leaves2.jpg") 10px round;
 }
 
 .title
@@ -50,9 +48,9 @@ body
 
 .logo
 {
-  height: 75%;
-  width: 75%;
-  /* transform: translateX(200%); */
+  height: 95%;
+  width: 95%;
+  transform: translateX(5%);
 }
 
 .dog
