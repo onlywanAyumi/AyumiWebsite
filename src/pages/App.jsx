@@ -1,10 +1,12 @@
 import '../css/Index.css'
 // import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
-import sato from "../../public/newSato3.png"
-// import dog from "../../public/testImage.png"
+import sato from "../../public/sotaLogos/newSota3.png"
 
-//should work as nav bar
+//photos for body
+import mainImage from "../../public/works/mainImage2.png"
+import puppies from "../../public/works/puppies2.png"
+import teddy from "../../public/works/teddy.png"
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <div className='subTitle'>
             OnlyWan a low-stress dog grooming service.
           </div>
+          <br />
+          <img className="basicPhoto" src={mainImage} />
         </section>
         <section>
           <div className='sectionTitle'>
@@ -33,11 +37,8 @@ function App() {
               We understand that each dog has unique needs, characteristics and preference. Whether 
               our furry friend needs a simple bath, brush, or a stylish haircut, we always 
               prioritize their comfort and well-being!
-              {/* <br/> */}
             </p>
-            {/* <img className="dog" src = {dog} /> */}
             <p>
-              {/* <br/> */}
               Ayumi is not only a groomer, but she also has been studying dog behaviors and animal 
               welfare for years. She loves and cares for dogs, and she will provide a gentle and 
               compassionate grooming approach, putting the dogs at ease and building trust 
@@ -56,6 +57,7 @@ function App() {
           </div>
           <div className='subText'>
             <h4>For puppies:</h4>
+            <img className="basicPhoto" src={puppies} />
             <p>
               The first grooming experience for puppy is very important 
               because It’s are not only one time job but life-long commitment.
@@ -66,6 +68,7 @@ function App() {
               <br/>
             </p>
             <h4>The Teddy Bear haircut:</h4>
+            <img className="basicPhoto" src={teddy} />
             <p>
               Do you like to have your dog to be looks like teddy bear?
               We will seek out each dog’s potential and make as cute as possible!

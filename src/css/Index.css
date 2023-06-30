@@ -24,6 +24,8 @@ body
   justify-content: center;
 
   word-wrap: break-word;
+
+  /* position: relative; */
 }
 
 .card
@@ -58,3 +60,27 @@ body
   height: 50%;
   width: 50%;
 }
+
+.basicPhoto
+{
+  /*
+  needs to be centered to card
+  needs to have a relative size to card
+  maintain aspect ratio
+  */
+  height: 400px;
+  width: 400px;
+  /* transform: translateX(50%); */
+}
+
+/* footer
+{
+  position: absolute;
+  bottom: 0;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.5vh;
+
+  background-color: rgb(51, 210, 133);
+} */
