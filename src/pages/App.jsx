@@ -7,6 +7,9 @@ import sato from "../../public/sotaLogos/newSota3.png"
 import mainImage from "../../public/works/mainImage2.png"
 import puppies from "../../public/works/puppies2.png"
 import teddy from "../../public/works/teddy.png"
+import ayuComp from "../../public/works/ayuComp.jpg"
+import petal from "../../public/works/petal.png"
+import asianFusion from "../../public/works/asianFusion.png"
 
 function App() {
 
@@ -38,6 +41,7 @@ function App() {
               our furry friend needs a simple bath, brush, or a stylish haircut, we always 
               prioritize their comfort and well-being!
             </p>
+            <img className='basicPhoto' src={ayuComp} />
             <p>
               Ayumi is not only a groomer, but she also has been studying dog behaviors and animal 
               welfare for years. She loves and cares for dogs, and she will provide a gentle and 
@@ -76,6 +80,7 @@ function App() {
               <br />
             </p>
             <h4>Asian-fusion haircut</h4>
+            <img className="basicPhoto" src={asianFusion} />
             <p>
               They have variety of asian-fusion hairstyles.
               If you look for your pet to have special looking, 
@@ -94,15 +99,49 @@ function App() {
         <br />
         <section>
           <div className='sectionTitle'>
+            <h2>Prices:</h2>
+          </div>
+          <div className='subText'>
+            <p>
+              Full grooming
+              <br />
+              Partial grooming
+              <br />
+              $80 per hour
+              {/* <br />
+              (all services are included, Bathing, 
+              Brushing, Ear cleaning, and Nail clipping) */}
+              <br />
+              <br />
+              Teeth cleaning: $15
+              <br />
+              Nail Trim:
+              <br />
+              for small dogs $18 
+              <br />
+              mid to large dogs $25 
+              <br />
+              <br />
+            </p>
+          </div>
+        </section>
+        <section>
+          <div className='sectionTitle'>
             <h2>Contact:</h2>
           </div>
           <div className='subText'>
-            Email: 
-            OnlyWanDogs@gmail.com
-            <br/>
             Number: 
             <br />
             206-454-0749
+            <br/>
+            Instagram:
+            <br/>
+            <a href="https://www.instagram.com/ayumi_doggrooming/">OnlyWanDogs</a>
+            <br/>
+            Email: 
+            <br />
+            OnlyWanDogs@gmail.com
+            <br/>
           </div>
         </section>
       </div>
