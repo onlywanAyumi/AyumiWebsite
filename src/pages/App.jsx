@@ -8,8 +8,8 @@ import mainImage from "../../public/works/mainImage2.png"
 import puppies from "../../public/works/puppies2.png"
 import teddy from "../../public/works/teddy.png"
 import ayuComp from "../../public/works/ayuComp.jpg"
-import petal from "../../public/works/petal.png"
 import asianFusion from "../../public/works/asianFusion.png"
+import petal from "../../public/works/petal.png"
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
     <div className='app'>
       <div className="card">
         <div className='titleBar'>
-          <img class="logo" src={sato} />
+          <img className="logo" src={sato} />
         </div>
         <section>
           <div className='sectionTitle'>
