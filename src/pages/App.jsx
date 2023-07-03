@@ -1,15 +1,17 @@
 import '../css/Index.css'
 // import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
-import sato from "../../public/sotaLogos/newSota3.png"
+import sato from "../../public/sotaLogos/sotaLogo9.png"
 
 //photos for body
-import mainImage from "../../public/works/mainImage2.png"
+import mainImage from "../../public/works/asianFusion.png"
 import puppies from "../../public/works/puppies2.png"
 import teddy from "../../public/works/teddy.png"
 import ayuComp from "../../public/works/ayuComp.jpg"
-import asianFusion from "../../public/works/asianFusion.png"
+import asianFusion from "../../public/works/asianFusion3.png"
 import petal from "../../public/works/petal.png"
+
+
 
 function App() {
 
@@ -61,7 +63,7 @@ function App() {
           </div>
           <div className='subText'>
             <h4>For puppies:</h4>
-            <img className="basicPhoto" src={puppies} />
+            <img className="basicPhoto" src={asianFusion} />
             <p>
               The first grooming experience for puppy is very important 
               because It’s are not only one time job but life-long commitment.
@@ -86,14 +88,14 @@ function App() {
               If you look for your pet to have special looking, 
               we are more than welcome to consult for it.
               <br/>
-              <br/>
+              {/* <br/> */}
             </p>
-            <h4>Standard Full Grooming:</h4>
+            {/* <h4>Standard Full Grooming:</h4>
             <p>
               Full grooming includes bath, brush, haircut, 
               nail trim, ear cleaning, 
               and anal gland expression (by request).
-            </p>
+            </p> */}
           </div>
         </section>
         <br />
@@ -107,11 +109,13 @@ function App() {
               <br />
               Partial grooming
               <br />
-              $80 per hour
+              <br />
+              $85 per hour
+              <br />
               {/* <br />
               (all services are included, Bathing, 
               Brushing, Ear cleaning, and Nail clipping) */}
-              <br />
+              
               <br />
               Teeth cleaning: $15
               <br />

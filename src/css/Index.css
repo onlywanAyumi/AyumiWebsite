@@ -33,8 +33,8 @@ body
 { 
   --text-size: 3vh;
   font-size: var(--text-size);
-  --ming-width: 300px;
-  min-width: var(--ming-width);
+  --min-width: 300px;
+  min-width: var(--min-width);
   --max-width: 400px;
   max-width: var(--max-width);
   
@@ -67,12 +67,55 @@ body
   needs to have a relative size to card
   maintain aspect ratio
   */
+
   --photo-height: 400px;
   height: var(--photo-height);
   --photo-width: 400px;
   width: var(--photo-width);
-  /* transform: translateX(50%); */
 }
+
+
+.card
+{
+  @media screen and (max-width: 650px)
+  {
+    /* --text-size: 1.75vh; */
+    --min-width: 150px;
+    --max-width: 250px;
+    --photo-height: 200px;
+    --photo-width: 200px;
+  }
+}
+
+.basicPhoto
+{
+  @media screen and (max-width: 650px)
+  {
+    --photo-height: 200px;
+    --photo-width: 200px;
+    transform: translateX(12%);
+  }
+}
+/* @media screen and (min-width: 500px)
+{
+  :root
+  {
+  }
+} */
+
+/* @media screen and (min-width: 500px)
+{
+  :root
+  {
+    --text-size: 7vh;
+    --min-width: 600px;
+    --max-width: 800px;
+    --photo-height: 800px;
+    --photo-width: 800px;
+  }
+} */
+
+
 
 /* footer
 {
