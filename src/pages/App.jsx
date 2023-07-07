@@ -45,7 +45,8 @@ function App() {
             </p>
             <img className='basicPhoto' src={ayuComp} />
             <p>
-              Ayumi is not only a groomer, but she also has been studying dog behaviors and animal 
+              Ayumi is a japanese proffessional dog groomer in seattle who specializes in asian-fusion hairstyles. 
+              She is not only a groomer, but she also has been studying dog behaviors and animal
               welfare for years. She loves and cares for dogs, and she will provide a gentle and 
               compassionate grooming approach, putting the dogs at ease and building trust 
               with dogs during the grooming process!
@@ -66,8 +67,8 @@ function App() {
             <img className="basicPhoto" src={asianFusion} />
             <p>
               The first grooming experience for puppy is very important 
-              because It’s are not only one time job but life-long commitment.
-              They have no idea what they’ll experience in their first time therefore we will 
+              because It’s not only a one time job but life-long commitment.
+              They have no idea what they will experience for their first time therefore we will 
               be very careful to proceed our services to be successful as enjoyable time 
               for them which will continually no stress for rest of them grooming life!
               <br/>
@@ -131,12 +132,22 @@ function App() {
         </section>
         <section>
           <div className='sectionTitle'>
+            <h2>Schedule:</h2>
+          </div>
+          <div className='subText'>
+            We are open from 8am to 5pm,
+            <br/>
+            Monday through Saturday
+          </div>
+        </section>
+        <section>
+          <div className='sectionTitle'>
             <h2>Contact:</h2>
           </div>
           <div className='subText'>
             Number: 
             <br />
-            206-454-0749
+            <a href="tel:206-454-0749">206-454-0749</a>
             <br/>
             Instagram:
             <br/>
@@ -147,22 +158,10 @@ function App() {
             OnlyWanDogs@gmail.com
             <br/>
           </div>
-        </section>
+        </section>   
       </div>
     </div>
   )
 }
 
 export default App
-
-/*
-idea for scroll to function, may be best for mobile
-do to large card length
-
-<nav>
-  <ul>
-    <li><a href="#whyUs">Why Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav> */
