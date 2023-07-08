@@ -25,7 +25,6 @@ function App() {
         <div className='titleBar'>
           <img className="logo" src={sato} />
         </div>
-        <article>
         <section>
           <div className='sectionTitle'>
             <h2>Welcome to:</h2>
@@ -140,7 +139,6 @@ function App() {
             </p>
           </div>
         </section>
-        </article>
         <section>
           <div className='sectionTitle'>
             <h2>Schedule:</h2>
