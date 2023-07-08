@@ -2,7 +2,7 @@ import '../css/Index.css'
 // import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
 import sato from "../../public/sotaLogos/sotaLogo1.webp"
-//change to 8 for other logo!                  ^^^
+//change to sotaLogo2 for other logo!                  ^^^
 
 //photos for body
 import mainImage from "../../public/works/asianFusion.webp"
@@ -23,7 +23,7 @@ function App() {
     <div className='app'>
       <div className="card">
         <div className='titleBar'>
-          <img className="logo" src={sato} />
+          <img className="logo" src={sato} alt="dog logo contains title with title"/>
         </div>
         <section>
           <div className='sectionTitle'>
@@ -33,7 +33,7 @@ function App() {
             OnlyWan a low-stress dog grooming service.
           </div>
           <br />
-          <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={mainImage} /></a>
+          <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={mainImage} alt="groomed dog"/></a>
         </section>
         <section>
           <div className='sectionTitle'>
@@ -47,7 +47,7 @@ function App() {
               our furry friend needs a simple bath, brush, or a stylish haircut, we always 
               prioritize their comfort and well-being!
             </p>
-            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className='basicPhoto' src={ayuComp} /></a>
+            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className='basicPhoto' src={ayuComp} alt="competition photo"/></a>
             <p>
               Ayumi is a japanese proffessional dog groomer in seattle who specializes in asian-fusion hairstyles. 
               She is not only a groomer, but she also has been studying dog behaviors and animal
@@ -68,7 +68,7 @@ function App() {
           </div>
           <div className='subText'>
             <h4>For puppies:</h4>
-            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={asianFusion} /></a>
+            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={asianFusion} alt="hairStyle example"/></a>
             <p>
               The first grooming experience for puppy is very important 
               because It’s not only a one time job but life-long commitment.
@@ -79,14 +79,14 @@ function App() {
               <br/>
             </p>
             <h4>The Teddy Bear haircut:</h4>
-            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={teddy} /></a>
+            <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={teddy} alt="hairStyle example"/></a>
             <p>
               Do you like to have your dog to be looks like teddy bear?
               We will seek out each dog’s potential and make as cute as possible!
               <br />
               <br />
             </p>
-            <h4>Asian-fusion haircut</h4>
+            <h4>Asian-fusion haircut:</h4>
             {/* <a href="https://www.instagram.com/ayumi_doggrooming/"><video className='basicVideo' src={afVideo} /></a> */}
             {/* <video className='basicVideo' src={afVideo} /> */}
             <video className='basicVideo' loop autoPlay muted>

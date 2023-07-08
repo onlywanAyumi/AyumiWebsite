@@ -16,6 +16,7 @@ body
   margin: 0;
 }
 
+/* contains the main content returned by app.jsx */
 .app
 {
   display: flex;
@@ -60,6 +61,7 @@ body
   width: 50%;
 }
 
+/* uses just two media queries for simplicity, works on all devices as tested with chrome dev tools */
 .basicPhoto
 {
   /*
@@ -81,7 +83,6 @@ body
   --video-width: 400px;
   width: var(--video-width);
 }
-
 
 .card
 {
@@ -120,26 +121,8 @@ body
   font-weight: 1000;
 
 }
-/* @media screen and (min-width: 500px)
-{
-  :root
-  {
-  }
-} */
 
-/* @media screen and (min-width: 500px)
-{
-  :root
-  {
-    --text-size: 7vh;
-    --min-width: 600px;
-    --max-width: 800px;
-    --photo-height: 800px;
-    --photo-width: 800px;
-  }
-} */
-
-
+/* optional footer can be added later */
 
 /* footer
 {
