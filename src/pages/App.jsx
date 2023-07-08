@@ -191,7 +191,7 @@ function App() {
             {/* <p className='name'>University of Edinburgh</p> */}
             University of Edinburgh
             
-            <p className='name'>EDIVET Acknowledge of what it takes to be a veterinarian</p>
+            <p className='name'>EDIVET certified</p>
             
           </div>
         </section>
