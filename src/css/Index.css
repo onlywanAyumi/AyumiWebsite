@@ -93,6 +93,7 @@ body
     --max-width: 250px;
     --photo-height: 200px;
     --photo-width: 200px;
+    --text-size: 2.5vh;
   }
 }
 
@@ -126,7 +127,7 @@ body
 
 /* footer
 {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   min-width: 300px;
   max-width: 400px;

@@ -1,5 +1,5 @@
 import '../css/Index.css'
-// import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
 import sato from "../../public/sotaLogos/sotaLogo1.webp"
 //change to sotaLogo2 for other logo!                  ^^^
@@ -21,16 +21,27 @@ function App() {
 
   return (
     <div className='app'>
+
+      {/* <Parallax pages={2}>
+        <ParallaxLayer speed={0.5}>
+          <newDiv />
+        </ParallaxLayer>
+        <ParallaxLayer speed={1}>
+          
+        </ParallaxLayer>
+      </Parallax> */}
+
       <div className="card">
         <div className='titleBar'>
           <img className="logo" src={sato} alt="dog logo contains title with title"/>
         </div>
         <section>
           <div className='sectionTitle'>
-            <h2>Welcome to:</h2>
+            <h2>Welcome to the OnlyWan</h2>
           </div>
           <div className='subTitle'>
-            OnlyWan a low-stress dog grooming service.
+            OnlyWan is a private, low-stress dog grooming 
+            service located in Bellevue, WA.
           </div>
           <br />
           <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={mainImage} alt="groomed dog"/></a>
@@ -56,8 +67,8 @@ function App() {
               with dogs during the grooming process!
               <br />
               <br />
-              Ayumi was also the third place winner 
-              of the salon freestyle at the Northwest Groonnubg Show 2023
+              Ayumi podium placed at the  
+              NorthWest Grooming Show 2023 salon freestyle competition
             </p>
           </div>
         </section>
@@ -179,7 +190,7 @@ function App() {
             <p className="name">Ayumi Matsumoto</p> 
             <a href="https://www.instagram.com/ayumi_doggrooming/"><img className='basicPhoto' src={ayu} /></a>
             
-            <p className='name'>North West Grooming Show 2023</p>
+            <p className='name'>NorthWest Grooming Show 2023</p>
             
             <p className='name'>Dog Emotion and Cognition</p>
             
@@ -196,6 +207,16 @@ function App() {
           </div>
         </section>
       </div>
+      {/* <footer>
+        testing testing testing testing
+        <div>
+          testing
+        </div>
+
+        <p>
+          testing testing testing testing
+        </p>
+      </footer> */}
     </div>
   )
 }
