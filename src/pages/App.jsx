@@ -1,43 +1,31 @@
 import '../css/Index.css'
-import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
-import sato from "../../public/sotaLogos/sotaLogo1.webp"
+import sato from "../assets/sotaLogo1.webp"
 //change to sotaLogo2 for other logo!                  ^^^
 
 //photos for body
-import mainImage from "../../public/works/asianFusion.webp"
-import puppies from "../../public/works/puppies2.webp"
-import teddy from "../../public/works/teddy.webp"
-import ayuComp from "../../public/works/ayuComp.webp"
-import asianFusion from "../../public/works/asianFusion3.webp"
-import petal from "../../public/works/petal.webp"
-import ayu from "../../public/works/AyumiMatsu2.webp"
+import mainImage from "../assets/asianFusion.webp"
+import teddy from "../assets/teddy.webp"
+import ayuComp from "../assets/ayuComp.webp"
+import asianFusion from "../assets/asianFusion3.webp"
+import ayu from "../assets/AyumiMatsu2.webp"
 
 //videos for body
-import afVideo from "../../public/works/afVideo.webm"
-import afVideo2 from "../../public/works/afVideo.mp4"
+import afVideo from "../assets//afVideo.webm"
+// import afVideo2 from "../assets//afVideo.mp4"
 
 function App() {
 
   return (
     <div className='app'>
 
-      {/* <Parallax pages={2}>
-        <ParallaxLayer speed={0.5}>
-          <newDiv />
-        </ParallaxLayer>
-        <ParallaxLayer speed={1}>
-          
-        </ParallaxLayer>
-      </Parallax> */}
-
       <div className="card">
-        <div className='titleBar'>
-          <img className="logo" src={sato} alt="dog logo contains title with title"/>
-        </div>
         <section>
           <div className='sectionTitle'>
-            <h2>Welcome to the OnlyWan</h2>
+            <h2>Welcome to </h2>
+          </div>
+          <div className='titleBar'>
+            <img className="logo" src={sato} alt="dog logo contains title with title"/>
           </div>
           <div className='subTitle'>
             OnlyWan is a private, low-stress dog grooming 
@@ -102,7 +90,7 @@ function App() {
             {/* <video className='basicVideo' src={afVideo} /> */}
             <video className='basicVideo' loop autoPlay muted>
               <source src={afVideo} type="video/webm" />
-              <source src={afVideo2} type="video/mp4" />
+              {/* <source src={afVideo2} type="video/mp4" /> */}
             </video>
             <p>
               There are a variety of asian-fusion hairstyles.

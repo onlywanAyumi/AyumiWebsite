@@ -11,14 +11,16 @@ body,
 body 
 {
   font-family: 'Ysabeau Infant', sans-serif;
-  background-image: url("../../public/leaves1.webp");
+  background-color: grey;
+  /* background-image: url("../../public/leaves1.webp"); */
   background-size: cover;
   margin: 0;
 }
 
-/* contains the main content returned by app.jsx */
+/* contains the main content returned by app. jsx */
 .app
 {
+  background-color: green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +34,7 @@ body
 
 .card
 { 
+  background-color: grey;
   --text-size: 3vh;
   font-size: var(--text-size);
   --min-width: 300px;
@@ -39,7 +42,7 @@ body
   --max-width: 400px;
   max-width: var(--max-width);
   
-  background-color: white;
+  /* background-color: white; */
   padding: 10%;
 }
 
