@@ -11,16 +11,17 @@ body,
 body 
 {
   font-family: 'Ysabeau Infant', sans-serif;
-  background-color: grey;
-  /* background-image: url("../../public/leaves1.webp"); */
+  background-image: url("../assets/leaves1.webp");
   background-size: cover;
   margin: 0;
+
+  /* background-image: url("../assets/leaves1.webp"); */
 }
 
 /* contains the main content returned by app. jsx */
 .app
 {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,13 +29,10 @@ body
   word-wrap: break-word;
 
   font-size: 30px;
-
-  /* position: relative; */
 }
 
 .card
 { 
-  background-color: grey;
   --text-size: 3vh;
   font-size: var(--text-size);
   --min-width: 300px;
@@ -42,7 +40,7 @@ body
   --max-width: 400px;
   max-width: var(--max-width);
   
-  /* background-color: white; */
+  background-color: white;
   padding: 10%;
 }
 
@@ -64,15 +62,8 @@ body
   width: 50%;
 }
 
-/* uses just two media queries for simplicity, works on all devices as tested with chrome dev tools */
 .basicPhoto
 {
-  /*
-  needs to be centered to card
-  needs to have a relative size to card
-  maintain aspect ratio
-  */
-
   --photo-height: 400px;
   height: var(--photo-height);
   --photo-width: 400px;
@@ -126,6 +117,11 @@ body
 
 }
 
+a
+{
+  white-space: nowrap;
+}
+
 /* optional footer can be added later */
 
 /* footer
@@ -139,8 +135,3 @@ body
 
   background-color: rgb(51, 210, 133);
 } */
-
-a
-{
-  white-space: nowrap;
-}

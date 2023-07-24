@@ -1,9 +1,8 @@
+//css
 import '../css/Index.css'
 
-import sato from "../assets/sotaLogo1.webp"
-//change to sotaLogo2 for other logo!                  ^^^
-
 //photos for body
+import sato from "../assets/sotaLogo1.webp"
 import mainImage from "../assets/asianFusion.webp"
 import teddy from "../assets/teddy.webp"
 import ayuComp from "../assets/ayuComp.webp"
