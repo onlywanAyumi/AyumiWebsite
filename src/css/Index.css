@@ -122,6 +122,28 @@ a
   white-space: nowrap;
 }
 
+.clickMe
+{
+  font-size: 2vh;
+  align-self: center;
+  cursor: pointer;
+  transform: translateY(-100%);
+}
+
+.clickMe
+{
+  @media screen and (max-width: 650px) {
+    font-size: 1.5vh;
+    transform: translate(12%, -100%);
+  }
+}
+
+.titleA
+{
+  
+  align-content: center;
+}
+
 /* optional footer can be added later */
 
 /* footer

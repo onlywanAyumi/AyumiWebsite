@@ -21,7 +21,7 @@ function App() {
       <div className="card">
         <section>
           <div className='sectionTitle'>
-            <h2>Welcome to </h2>
+            <h2 className='titleA'>Welcome to </h2>
           </div>
           <div className='titleBar'>
             <img className="logo" src={sato} alt="dog logo contains title with title"/>
@@ -32,7 +32,9 @@ function App() {
           </div>
           <br />
           <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={mainImage} alt="groomed dog"/></a>
+          <p className='clickMe'>Click me for more!</p>
         </section>
+        {/* <br /> */}
         <section>
           <div className='sectionTitle'>
             <h2>Why us:</h2>
@@ -45,7 +47,11 @@ function App() {
               our furry friend needs a simple bath, brush, or a stylish haircut, we always 
               prioritize their comfort and well-being!
             </p>
+            <br />
             <a href="https://www.instagram.com/ayumi_doggrooming/"><img className='basicPhoto' src={ayuComp} alt="competition photo"/></a>
+            <p className='clickMe'>Click me for more!</p>
+            {/* <br /> */}
+            {/* <br /> */}
             <p>
               Ayumi is a japanese proffessional dog groomer in seattle who specializes in asian-fusion hairstyles. 
               She is not only a groomer, but she also has been studying dog behaviors and animal
@@ -59,7 +65,7 @@ function App() {
             </p>
           </div>
         </section>
-        <br />
+        {/* <br /> */}
         <section>
           <div className='sectionTitle'>
             <h2>Services:</h2>
@@ -67,6 +73,7 @@ function App() {
           <div className='subText'>
             <h4>For puppies:</h4>
             <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={asianFusion} alt="hairStyle example"/></a>
+            <p className='clickMe'>Click me for more!</p>
             <p>
               The first grooming experience for puppy is very important 
               because It’s not only a one time job but life-long commitment.
@@ -78,6 +85,7 @@ function App() {
             </p>
             <h4>The Teddy Bear haircut:</h4>
             <a href="https://www.instagram.com/ayumi_doggrooming/"><img className="basicPhoto" src={teddy} alt="hairStyle example"/></a>
+            <p className='clickMe'>Click me for more!</p>
             <p>
               Do you like to have your dog to be looks like teddy bear?
               We will seek out each dog’s potential and make as cute as possible!
@@ -106,7 +114,7 @@ function App() {
             </p> */}
           </div>
         </section>
-        <br />
+        {/* <br /> */}
         <section>
           <div className='sectionTitle'>
             <h2>Prices:</h2>
@@ -176,7 +184,7 @@ function App() {
 
             <p className="name">Ayumi Matsumoto</p> 
             <a href="https://www.instagram.com/ayumi_doggrooming/"><img className='basicPhoto' src={ayu} /></a>
-            
+            <p className='clickMe'>Click me for more!</p>
             <p className='name'>NorthWest Grooming Show 2023</p>
             
             <p className='name'>Dog Emotion and Cognition</p>
