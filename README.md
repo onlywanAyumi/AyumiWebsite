@@ -1,11 +1,14 @@
 # AyumiWebsite
 ### A small website for a small buisness
 
-## 1. Why did I use react?
-Huh is he stupid! Does he know hes adding all that javascript for a static site. First of all yes to both.
+I made a website for a small buisnes, I tried to make it with react initially because I wanted to use so cool libraries such as
+react router and react spring parallax. I also wanted to setup multilanguage pages as components that I could return with javascript
 
-I used react because initially wanted to use the react spring parallax, due to the vanilla js, css, parallax creation method of using the z axis being unsatisfactory from the weird right shift side effect. 
-Second reason was because the client told me she wished to have a multipage application in the future, maybe incorporating a scheduling function, a self checkin system, a payment system like square, a multipage routing system with a nav bar and an gallery for displaying instagram photos that will connect with her instagram via the basic meta api. 
-Third reason is I thought it would make for a easier development process when introducing other pages in other languages. I believe it may be a good idea to treat different language pages as components I can all the user to select from. Or maybe this is a problem that I suspect html has already solved and I'm over engineering before I have even begun.
+I later found out it was not worth the effort, I faced problems with everything from compatibility, hosting, rendering, and basically everything
+that could go wrong did. All of this made the project take significantly longer, and lower quality than if I had just thrown in the towel earlier and made it as a plain js app, which is what I ended up going with anyways.
 
-## Anyways thanks for checking out my work
+# future
+add parallax to make better use of limited background
+add footer with my details
+add multilanguage premade pages (not just using google translate in the browser) but pre made pages for specific customers
+try improve seo score, and hope for this page to be listed on google so people can find it
