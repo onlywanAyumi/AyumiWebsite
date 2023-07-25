@@ -9,9 +9,8 @@ import ayuComp from "../assets/ayuComp.webp"
 import asianFusion from "../assets/asianFusion3.webp"
 import ayu from "../assets/AyumiMatsu2.webp"
 
-//videos for body
-import afVideo from "../assets//afVideo.webm"
-// import afVideo2 from "../assets//afVideo.mp4"
+//components
+import Video from './video.jsx'
 
 function App() {
 
@@ -95,10 +94,9 @@ function App() {
             <h4>Asian-fusion haircut:</h4>
             {/* <a href="https://www.instagram.com/ayumi_doggrooming/"><video className='basicVideo' src={afVideo} /></a> */}
             {/* <video className='basicVideo' src={afVideo} /> */}
-            <video className='basicVideo' loop autoPlay muted>
-              <source src={afVideo} type="video/webm" />
-              {/* <source src={afVideo2} type="video/mp4" /> */}
-            </video>
+
+            <Video />
+
             <p>
               There are a variety of asian-fusion hairstyles.
               If you looking for your pet to have a special look, 
@@ -202,7 +200,7 @@ function App() {
           </div>
         </section>
       </div>
-      {/* <footer>
+      <footer>
         testing testing testing testing
         <div>
           testing
@@ -211,7 +209,7 @@ function App() {
         <p>
           testing testing testing testing
         </p>
-      </footer> */}
+      </footer>
     </div>
   )
 }

@@ -11,7 +11,8 @@ body,
 body 
 {
   font-family: 'Ysabeau Infant', sans-serif;
-  background-image: url("../assets/leaves1.webp");
+  /* background-image: url("../assets/leaves1.webp"); */
+  background-image: url("../assets/leaves2.jpg");
   background-size: cover;
   margin: 0;
 
@@ -146,7 +147,7 @@ a
 
 /* optional footer can be added later */
 
-/* footer
+footer
 {
   position: fixed;
   bottom: 0;
@@ -156,4 +157,4 @@ a
   font-size: 1.5vh;
 
   background-color: rgb(51, 210, 133);
-} */
+}
