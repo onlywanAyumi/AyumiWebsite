@@ -6,29 +6,34 @@ body,
 {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 body 
 {
   font-family: 'Ysabeau Infant', sans-serif;
+  height: 100vh;
+  width: 100vh;
   background-image: url("../assets/leaves1.webp");
-  /* background-image: url("../assets/leaves2.jpg"); */
   background-size: cover;
-  margin: 0;
 
-  /* background-image: url("../assets/leaves1.webp"); */
+  background-attachment: fixed;
 }
 
-/* contains the main content returned by app. jsx */
+/* .BG
+{
+  height: 100vh;
+  width: 100vh;
+  background-image: url("../assets/leaves1.webp");
+  background-size: cover;
+} */
+
 .app
 {
-  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: center;
-
   word-wrap: break-word;
-
   font-size: 30px;
 }
 
@@ -115,7 +120,6 @@ body
 .name
 {
   font-weight: 1000;
-
 }
 
 a
@@ -140,13 +144,11 @@ a
 }
 
 .titleA
-{
-  
+{ 
   align-content: center;
 }
 
 /* optional footer can be added later */
-
 /* footer
 {
   position: fixed;
