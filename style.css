@@ -8,8 +8,12 @@ html
 body
 {
     background-image: url("assets/leaves1.webp");
+
     /* Create the parallax scrolling effect */
     height: 100%;
+    overflow-x: hidden;
+    /* max-width: 100vh; */
+
     margin: 0;
     background-attachment: fixed;
     background-position: center;
@@ -20,94 +24,100 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.content-wrapper
-{
-    padding: 10px;
-    
-    /* Box properties */
-    box-sizing: border-box;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
-    
-    /* Border radius for rounded corners */
-    border-radius: 10px;
+    border: 1vh solid red;
 }
 
 .content 
 {
     background-color: transparent;
     position: relative;
-    z-index: 1;  
+    /* z-index: 1;   */
 
     word-wrap: break-word;
-    font-size: 30px;
+    /* font-size: 4vh; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     --text-size: 3vh;
+    /* --min-width: 60vh;
+    --max-width: 80vh; */
+
     font-size: var(--text-size);
-    --min-width: 300px;
-    min-width: var(--min-width);
-    --max-width: 400px;
+    min-width: var(--min-width);    
     max-width: var(--max-width);
+
     background-color: white;
+
     /* padding: 10%; */
+    content: 10vh;
+    padding: 5vh;
 
-    border: 10px solid orange;
-}
+    border: 1.5vh solid black;
+    border-top: 0vh;
+    border-bottom: 0vh;
 
-.title {
-    font-size: 8vh;
 }
 
 .logo {
-    height: 95%;
-    width: 95%;
-    transform: translateX(5%);
+    height: 60vh;
+    width: 60vh;
+    /* transform: translateX(5%); */
 }
 
 .dog {
-    height: 50%;
-    width: 50%;
+    height: 50vh;
+    width: 50;
 }
 
 .basicPhoto {
-    --photo-height: 400px;
+
+    
+
+    /* --photo-height: 400px;
     height: var(--photo-height);
     --photo-width: 400px;
-    width: var(--photo-width);
+    width: var(--photo-width); */
 }
 
 .basicVideo {
-    --video-height: 400px;
+    /* --video-height: 400px;
     height: var(--video-height);
     --video-width: 400px;
-    width: var(--video-width);
+    width: var(--video-width); */
 }
 
 .card {
     @media screen and (max-width: 650px) {
-        /* --text-size: 1.75vh; */
-        --min-width: 150px;
+
+
+        /* --min-width: 150px;
         --max-width: 250px;
         --photo-height: 200px;
-        --photo-width: 200px;
+        --photo-width: 200px; */
         --text-size: 2.5vh;
     }
 }
 
 .basicPhoto {
     @media screen and (max-width: 650px) {
-        --photo-height: 200px;
+
+
+        /* --photo-height: 200px;
         --photo-width: 200px;
-        transform: translateX(12%);
+        transform: translateX(12%); */
     }
 }
 
 .basicVideo {
     @media screen and (max-width: 650px) {
-        --video-height: 200px;
+
+
+        /* --video-height: 200px;
         --video-width: 200px;
-        transform: translateX(12%);
+        transform: translateX(12%); */
     }
 }
 
@@ -131,8 +141,4 @@ a {
         font-size: 1.5vh;
         transform: translate(12%, -100%);
     }
-}
-
-.titleA {
-    align-content: center;
 }
