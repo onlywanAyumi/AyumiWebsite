@@ -1,165 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,200;1,400&display=swap');
 
-#root,
+html
+{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
 body
 {
-  margin: 0;
-  justify-content: center;
-  /* align-items: center; */
+    background-image: url("assets/leaves1.webp");
+    /* Create the parallax scrolling effect */
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Use Flexbox for centering content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body 
+.content-wrapper
 {
-  font-family: 'Ysabeau Infant', sans-serif;
-  height: 100vh;
-  width: 100vh;
-
-  align-items: center;
-
-  background-attachment: fixed;
-  background-image: url("../assets/leaves1.webp");
-  background-size: cover;
-  background-repeat: repeat;
-
-  background-attachment: fixed;
-
-  border: 10px solid blue;
+    padding: 10px;
+    
+    /* Box properties */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    
+    /* Border radius for rounded corners */
+    border-radius: 10px;
 }
 
-.app
+.content 
 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;  
 
-  word-wrap: break-word;
-  font-size: 30px;
+    word-wrap: break-word;
+    font-size: 30px;
 
-  border: 10px solid purple;
+    --text-size: 3vh;
+    font-size: var(--text-size);
+    --min-width: 300px;
+    min-width: var(--min-width);
+    --max-width: 400px;
+    max-width: var(--max-width);
+    background-color: white;
+    /* padding: 10%; */
+
+    border: 10px solid orange;
 }
 
-.card
-{ 
-  --text-size: 3vh;
-  font-size: var(--text-size);
-  --min-width: 300px;
-  min-width: var(--min-width);
-  --max-width: 400px;
-  max-width: var(--max-width);
-  background-color: white;
-  padding: 10%;
-
-  border: 10px solid orange;
+.title {
+    font-size: 8vh;
 }
 
-.title
-{
-  font-size: 8vh;
+.logo {
+    height: 95%;
+    width: 95%;
+    transform: translateX(5%);
 }
 
-.logo
-{
-  height: 95%;
-  width: 95%;
-  transform: translateX(5%);
+.dog {
+    height: 50%;
+    width: 50%;
 }
 
-.dog
-{
-  height: 50%;
-  width: 50%;
+.basicPhoto {
+    --photo-height: 400px;
+    height: var(--photo-height);
+    --photo-width: 400px;
+    width: var(--photo-width);
 }
 
-.basicPhoto
-{
-  --photo-height: 400px;
-  height: var(--photo-height);
-  --photo-width: 400px;
-  width: var(--photo-width);
+.basicVideo {
+    --video-height: 400px;
+    height: var(--video-height);
+    --video-width: 400px;
+    width: var(--video-width);
 }
 
-.basicVideo
-{
-  --video-height: 400px;
-  height: var(--video-height);
-  --video-width: 400px;
-  width: var(--video-width);
+.card {
+    @media screen and (max-width: 650px) {
+        /* --text-size: 1.75vh; */
+        --min-width: 150px;
+        --max-width: 250px;
+        --photo-height: 200px;
+        --photo-width: 200px;
+        --text-size: 2.5vh;
+    }
 }
 
-.card
-{
-  @media screen and (max-width: 650px)
-  {
-    /* --text-size: 1.75vh; */
-    --min-width: 150px;
-    --max-width: 250px;
-    --photo-height: 200px;
-    --photo-width: 200px;
-    --text-size: 2.5vh;
-  }
+.basicPhoto {
+    @media screen and (max-width: 650px) {
+        --photo-height: 200px;
+        --photo-width: 200px;
+        transform: translateX(12%);
+    }
 }
 
-.basicPhoto
-{
-  @media screen and (max-width: 650px)
-  {
-    --photo-height: 200px;
-    --photo-width: 200px;
-    transform: translateX(12%);
-  }
+.basicVideo {
+    @media screen and (max-width: 650px) {
+        --video-height: 200px;
+        --video-width: 200px;
+        transform: translateX(12%);
+    }
 }
 
-.basicVideo
-{
-  @media screen and (max-width: 650px)
-  {
-    --video-height: 200px;
-    --video-width: 200px;
-    transform: translateX(12%);
-  }
+.name {
+    font-weight: 1000;
 }
 
-.name
-{
-  font-weight: 1000;
+a {
+    white-space: nowrap;
 }
 
-a
-{
-  white-space: nowrap;
+.clickMe {
+    font-size: 2vh;
+    align-self: center;
+    cursor: pointer;
+    transform: translateY(-100%);
 }
 
-.clickMe
-{
-  font-size: 2vh;
-  align-self: center;
-  cursor: pointer;
-  transform: translateY(-100%);
+.clickMe {
+    @media screen and (max-width: 650px) {
+        font-size: 1.5vh;
+        transform: translate(12%, -100%);
+    }
 }
 
-.clickMe
-{
-  @media screen and (max-width: 650px) {
-    font-size: 1.5vh;
-    transform: translate(12%, -100%);
-  }
+.titleA {
+    align-content: center;
 }
-
-.titleA
-{ 
-  align-content: center;
-}
-
-/* optional footer can be added later */
-/* footer
-{
-  position: fixed;
-  bottom: 0;
-  min-width: 300px;
-  max-width: 400px;
-  text-align: center;
-  font-size: 1.5vh;
-
-  background-color: rgb(51, 210, 133);
-} */
