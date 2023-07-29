@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,200;1,400&display=swap');
 
-html
-{
+html {
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
-body
-{
+body {
     background-image: url("assets/leaves1.webp");
 
     /* Create the parallax scrolling effect */
@@ -15,21 +13,21 @@ body
     /* max-width: 100vh; */
 
     margin: 0;
+    padding: 0;
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     /* Use Flexbox for centering content */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 1vh solid red;
 }
 
-.content 
-{
+.content {
     background-color: transparent;
     position: relative;
     /* z-index: 1;   */
@@ -41,12 +39,17 @@ body
     flex-direction: column;
     align-items: center;
 
+    /* centers horizontally */
+    margin: 0 auto;
+
     --text-size: 3vh;
+    --min-width: 40vh;
+    --max-width: 60vh;
     /* --min-width: 60vh;
     --max-width: 80vh; */
 
     font-size: var(--text-size);
-    min-width: var(--min-width);    
+    min-width: var(--min-width);
     max-width: var(--max-width);
 
     background-color: white;
@@ -67,14 +70,10 @@ body
     /* transform: translateX(5%); */
 }
 
-.dog {
-    height: 50vh;
-    width: 50;
-}
-
 .basicPhoto {
 
-    
+    --max-width: 20vh;
+    --max-height: 20vh;
 
     /* --photo-height: 400px;
     height: var(--photo-height);
@@ -89,55 +88,47 @@ body
     width: var(--video-width); */
 }
 
-.card {
+/* .card {
     @media screen and (max-width: 650px) {
 
-
-        /* --min-width: 150px;
-        --max-width: 250px;
-        --photo-height: 200px;
-        --photo-width: 200px; */
         --text-size: 2.5vh;
     }
-}
+} */
 
-.basicPhoto {
+/* .basicPhoto {
     @media screen and (max-width: 650px) {
 
-
-        /* --photo-height: 200px;
-        --photo-width: 200px;
-        transform: translateX(12%); */
     }
-}
+} */
 
-.basicVideo {
+/* .basicVideo {
     @media screen and (max-width: 650px) {
 
-
-        /* --video-height: 200px;
-        --video-width: 200px;
-        transform: translateX(12%); */
     }
-}
+} */
 
-.name {
+.name 
+{
     font-weight: 1000;
 }
 
-a {
+a 
+{
     white-space: nowrap;
 }
 
-.clickMe {
+.clickMe 
+{
     font-size: 2vh;
     align-self: center;
     cursor: pointer;
     transform: translateY(-100%);
 }
 
-.clickMe {
-    @media screen and (max-width: 650px) {
+.clickMe 
+{
+    @media screen and (max-width: 650px) 
+    {
         font-size: 1.5vh;
         transform: translate(12%, -100%);
     }
