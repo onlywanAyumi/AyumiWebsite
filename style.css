@@ -47,9 +47,8 @@ body {
     /* centers horizontally */
     margin: 0 auto;
 
-    --text-size: 3vh;
-    --min-width: 40vh;
-    --max-width: 60vh;
+    --text-size: 20px; 
+    --max-width: 65vw;
     /* --min-width: 60vh;
     --max-width: 80vh; */
 
@@ -66,6 +65,12 @@ body {
     border: 1.5vh solid black;
     border-top: 0vh;
     border-bottom: 0vh;
+
+    @media screen and (min-width: 650px) {
+        
+        --text-size: 40px; 
+        
+    }
 
 }
 
@@ -88,10 +93,24 @@ body {
 
 .basicPhoto {
 
-    --max-width: 40vh;
-    --max-height: 40vh;
+    display: flex;
+
+    --max-width: 35vh;
+    --max-height: 35vh;
     max-width: var(--max-width);
     max-height: var(--max-height);
+
+    @media screen and (max-width: 650px) {
+        
+        --max-width: 28vh;
+        --max-height: 28vh;
+    }
+
+    @media screen and (min-width: 650px) {
+        
+        --max-width: 60vh;
+        --max-height: 60vh;
+    }
 }
 
 .basicVideo {
@@ -99,26 +118,11 @@ body {
     --max-widthV: 50%;
     max-width: var(--max-widthV);
     max-height: var(--max-heightV);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* .card {
-    @media screen and (max-width: 650px) {
-
-        --text-size: 2.5vh;
-    }
-} */
-
-/* .basicPhoto {
-    @media screen and (max-width: 650px) {
-
-    }
-} */
-
-/* .basicVideo {
-    @media screen and (max-width: 650px) {
-
-    }
-} */
 
 .name 
 {
@@ -132,10 +136,13 @@ body {
 
 .clickMe 
 {
+    display: block;
+    text-align: center;
+
     font-size: 2vh;
     align-self: center;
     cursor: pointer;
-    transform: translateY(-100%);
+    transform: translatey(-100%)
 }
 
 .clickMe 
@@ -143,7 +150,7 @@ body {
     @media screen and (max-width: 650px) 
     {
         font-size: 1.5vh;
-        transform: translate(12%, -100%);
+        transform: translatey(-90%);
     }
 }
 
@@ -160,9 +167,10 @@ nav {
     top: 0;
     z-index: 1;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    --min-width: 40vh;
+    --max-width: 60vh;
+    min-width: var(--min-width);
+    max-width: var(--max-width);
 }
 
 nav ul {
