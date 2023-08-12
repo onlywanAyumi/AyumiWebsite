@@ -1,5 +1,6 @@
 # AyumiWebsite
 ### A small website for a small buisness
+### Check it out at OnlyWanDogs.com
 
 I made a website for a small buisnes, I tried to make it with react initially because I wanted to use so cool libraries such as
 react router and react spring parallax. I also wanted to setup multilanguage pages as components that I could return with javascript
