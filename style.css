@@ -98,7 +98,7 @@ body {
     .content
     {
         font-size: 5vw; 
-        max-width: 50vw;
+        max-width: 55vw;
     }
 
     .basicPhoto
@@ -126,6 +126,17 @@ body {
         max-width: 40vw;
         max-height: 40vw;
     }
+}
+
+@media screen and (max-width: 700px) {
+    
+    body
+    {
+        background-attachment: scroll;
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    
 }
 
 .basicVideo {
